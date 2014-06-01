@@ -1,6 +1,8 @@
 memory-stream
 =============
 
+[![Build Status](https://travis-ci.org/lazutkin/memory-stream.svg?branch=develop)](https://travis-ci.org/lazutkin/memory-stream)
+
 Passing stream that remembers data flowing through it. Passed data can be accessed at any time by
 by `#remember` method.
 
