@@ -1,0 +1,37 @@
+{
+  "name": "memory-stream",
+  "version": "0.0.1",
+  "description": "Data buffering stream",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --compilers coffee:coffee-script/register --reporter spec tests/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lazutkin/memory-stream.git"
+  },
+  "keywords": [
+    "buffer",
+    "stream"
+  ],
+  "author": "Dmitry Lazutkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lazutkin/memory-stream/issues"
+  },
+  "homepage": "https://github.com/lazutkin/memory-stream",
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "gulp": "^3.7.0",
+    "gulp-util": "^2.2.14",
+    "gulp-plumber": "^0.6.2",
+    "gulp-changed": "^0.3.0",
+    "gulp-coffee": "^1.4.3",
+    "mocha": "^1.20.0",
+    "chai": "^1.9.1",
+    "underscore.string": "^2.3.3"
+  },
+  "dependencies": {
+    "through2": "^0.4.2"
+  }
+}
