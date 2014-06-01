@@ -1,5 +1,5 @@
 {
-  "name": "memory-stream",
+  "name": "x-memory-stream",
   "version": "0.0.1",
   "description": "Data buffering stream",
   "main": "index.js",
@@ -12,7 +12,8 @@
   },
   "keywords": [
     "buffer",
-    "stream"
+    "stream",
+    "memory"
   ],
   "author": "Dmitry Lazutkin",
   "license": "MIT",

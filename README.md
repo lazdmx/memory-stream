@@ -9,7 +9,7 @@ by `#remember` method.
 ## Usage
 
 ```coffeescript
-memory = require "memory-stream"
+memory = require "x-memory-stream"
 
 # Creates memory stream which will increment internal buffer by 10Kb step
 m = memory 10 * 1024 # Default increment size is 100Kb
