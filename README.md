@@ -1,15 +1,21 @@
 memory-stream
 =============
 
-Passing stream that remembers data flowing through it. Data can be accessed
-by `#remember` method at any time.
+Passing stream that remembers data flowing through it. Passed data can be accessed at any time by
+by `#remember` method.
 
 ## Usage
 
 ```coffeescript
-m = memory( )
+memory = require "memory-stream"
+
+# Creates memory stream which will increment internal buffer by 10Kb step
+m = memory 10 * 1024 # Default increment size is 100Kb
+
 a.pipe( m ).pipe( b ).on "end", ->
+  # Get remembered data
   data = m.remember( )
 ```
+
 
 
