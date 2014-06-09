@@ -11,10 +11,10 @@ by `#remember` method.
 ```coffeescript
 memory = require "x-memory-stream"
 
-# Creates memory stream which will increment internal buffer by 10Kb step
-m = memory 10 * 1024 # Default increment size is 100Kb
+# Creates memory stream which will increment internal buffer by ~10Kb step. Default step is ~100Kb
+m = memory 10 * 1024
 
-a.pipe( m ).pipe( b ).on "end", ->
+a.pipe( m ).pipe( b ).on "finish", ->
   # Get remembered data
   data = m.remember( )
 ```
